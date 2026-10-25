@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · TaskFlow</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="projects" data-title="Projects">
+  <main id="page" class="page">
+    <div class="page-head">
+      <div><h1>Projects</h1><p>Every project you can access, with live progress.</p></div>
+      <div class="page-actions">
+        <button type="button" class="btn btn-primary" id="new-project"><i data-icon="plus"></i> New project</button>
+      </div>
+    </div>
+    <div class="toolbar">
+      <div class="search">
+        <i data-icon="search" data-size="18"></i>
+        <label class="sr-only" for="project-search">Search projects</label>
+        <input class="input" id="project-search" type="search" placeholder="Search projects…" autocomplete="off">
+      </div>
+      <div class="seg" role="group" aria-label="View">
+        <button type="button" data-view="grid" aria-pressed="true" aria-label="Grid view"><i data-icon="grid"></i></button>
+        <button type="button" data-view="list" aria-pressed="false" aria-label="List view"><i data-icon="list"></i></button>
+      </div>
+    </div>
+    <div id="projects-area" aria-live="polite"></div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
