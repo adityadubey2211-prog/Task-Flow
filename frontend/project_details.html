@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project · TaskFlow</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="projects" data-title="Project">
+  <main id="page" class="page">
+    <div id="project-head"></div>
+    <div id="board-controls" class="hidden">
+      <div class="toolbar">
+        <div class="search">
+          <i data-icon="search" data-size="18"></i>
+          <label class="sr-only" for="task-search">Search tasks</label>
+          <input class="input" id="task-search" type="search" placeholder="Search tasks…" autocomplete="off">
+        </div>
+        <label class="sr-only" for="filter-status">Filter by status</label>
+        <select class="select" id="filter-status"><option value="">All statuses</option></select>
+        <label class="sr-only" for="filter-priority">Filter by priority</label>
+        <select class="select" id="filter-priority"><option value="">All priorities</option></select>
+      </div>
+    </div>
+    <div id="board-area" aria-live="polite"></div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/project-detail.js"></script>
+</body>
+</html>
